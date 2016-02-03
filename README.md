@@ -1,17 +1,7 @@
-kalastatic
+SuperDelegates Campaign
 ==========
 
-Static site framework for prototyping and building out CMS-less websites at Kalamuna.
-
-demo site: http://test-kalastatic.at.kalamuna.com
-
-## Features
-
-* [Metalsmith](http://www.metalsmith.io) static site generator
-* [Swig](https://paularmstrong.github.io/swig/) template engine
-* [SASS](http://sass-lang.com) CSS pre-processor
-* [KSS](http://warpspire.com/kss/) CSS Documentation and Styleguide
-* [Grunt](http://http://gruntjs.com/) for automating tasks
+demo site: http://madeofpeople.github.io/delegatescampaign
 
 
 ## Requirements
@@ -24,7 +14,7 @@ demo site: http://test-kalastatic.at.kalamuna.com
 
 ### Download the site
 
-    git clone git@github.com:kalamuna/kalastatic.git
+    git clone git@github.com:madeofpeople/delegatescampaign.git
     cd kalastatic
 
 
@@ -38,7 +28,7 @@ demo site: http://test-kalastatic.at.kalamuna.com
 1. Build the site using the following command:
 
   ```
-  npm test
+  grunt build
   ```
 
 2. Visit the compiled `build` folder to see the built site
@@ -48,7 +38,7 @@ demo site: http://test-kalastatic.at.kalamuna.com
 
 Deploy the site by running:
   ```
-  npm run deploy
+  npm run ghdeploy
   ```
 
 ### Development
@@ -61,3 +51,11 @@ Deploy the site by running:
 
 2. Visit [`0.0.0.0:8000`](http://0.0.0.0:8000) in your browser
 3. Visit [`0.0.0.0:8000/stylguide`](http://0.0.0.0:8000/styleguide) for the style guide
+
+
+## Technobabble
+
+* [Metalsmith](http://www.metalsmith.io) static site generator
+* [Swig](https://paularmstrong.github.io/swig/) template engine
+* [SASS](http://sass-lang.com) CSS pre-processor
+* [Grunt](http://http://gruntjs.com/) for automating tasks
