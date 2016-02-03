@@ -54,6 +54,6 @@
     },
     "repo": "madeofpeople/delegatescampaign",
     "deploy": "git@github.com:madeofpeople/delegatescampaign.git",
-    "branch": "master"
+    "branch": "gh-pages"
   }
 }
