@@ -28,7 +28,7 @@ demo site: http://madeofpeople.github.io/delegatescampaign
 1. Build the site using the following command:
 
   ```
-  grunt build
+  npm run build
   ```
 
 2. Visit the compiled `build` folder to see the built site
