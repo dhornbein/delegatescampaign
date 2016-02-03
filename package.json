@@ -50,7 +50,7 @@
   "config": {
     "kstatic": {
       "base_url": "/",
-      "gh_base": "/madeofpeople/delegatescampaign/"
+      "gh_base": "http://madeofpeople.github.io/delegatescampaign/states/michigan/"
     },
     "repo": "madeofpeople/delegatescampaign",
     "deploy": "git@github.com:madeofpeople/delegatescampaign.git",
