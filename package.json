@@ -53,7 +53,7 @@
       "gh_base": "madeofpeople/delegatescampaign"
     },
     "repo": "madeofpeople/delegatescampaign",
-    "deploy": "",
+    "deploy": "git@github.com:madeofpeople/delegatescampaign.git",
     "branch": "master"
   }
 }
