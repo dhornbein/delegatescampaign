@@ -2,7 +2,7 @@
 <html>
 <head>
   {% if NODE_ENV == "gh" %}
-    {% set baseURL = npm_package_config_kstatic_ghBaseURL %}
+    {% set baseURL = npm_package_config_kstatic_gh_base %}
   {% else %}
     {% set baseURL = npm_package_config_kstatic_base_url %}
   {% endif %}

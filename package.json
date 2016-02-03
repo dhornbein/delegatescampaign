@@ -50,7 +50,7 @@
   "config": {
     "kstatic": {
       "base_url": "/",
-      "gh_base": "madeofpeople/delegatescampaign"
+      "gh_base": "/madeofpeople/delegatescampaign/"
     },
     "repo": "madeofpeople/delegatescampaign",
     "deploy": "git@github.com:madeofpeople/delegatescampaign.git",
