@@ -1,7 +1,7 @@
 SuperDelegates Campaign
 ==========
 
-demo site: http://madeofpeople.github.io/delegatescampaign
+demo site: http://dhornbein.github.io/delegatescampaign
 
 
 ## Requirements
@@ -14,8 +14,8 @@ demo site: http://madeofpeople.github.io/delegatescampaign
 
 ### Download the site
 
-    git clone git@github.com:madeofpeople/delegatescampaign.git
-    cd kalastatic
+    git clone git@github.com:dhornbein/delegatescampaign.git
+    cd delegatescampaign
 
 
 ### Install Dependencies
