@@ -50,7 +50,7 @@
   "config": {
     "kstatic": {
       "base_url": "/",
-      "gh_base": "http://dhornbein.github.io/delegatescampaign/"
+      "gh_base": "https://dhornbein.github.io/delegatescampaign/"
     },
     "repo": "dhornbein/delegatescampaign",
     "deploy": "git@github.com:dhornbein/delegatescampaign.git",
