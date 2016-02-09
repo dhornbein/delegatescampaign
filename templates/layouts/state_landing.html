@@ -12,24 +12,52 @@
 
     <section class="delegates">
       <h2>Delegates for {{title|safe}}</h2>
-      <table>
+      <!-- <table>
         <thead>
           <tr>
-            <td>Name</td>
-            <td>Phone</td>
+            <td>candidate</td>
+            <td>title</td>
+            <td>name</td>
+            <td>phone</td>
+            <td>fax</td>
+            <td>email</td>
+            <td>twitter</td>
+            <td>facebook</td>
+            <td>youtube</td>
+            <td>website</td>
+            <td>address</td>
+            <td>Other Social Media</td>
+            <td>notes</td>
           </tr>
-        </thead>
-        <tbody>
+        </thead> 
+        <tbody> -->
         {% for row, val in gSheets["Delegates"].rows %}
-          {% if val.state == abbr %}
-          <tr>
-            <td class="name">{{val.name}}</td>
-            <td class="phone">{{val.phone}}</td>
-          </tr>
+          {% if val.state == abbr or val.state == title %}
+          <div class="panel panel-default endorse-{{val.candidate|lower}}">
+              <div class="panel-heading">
+                <h3>
+                  <span class="title">{{val.title}}</span>
+                  <span class="name">{{val.name}}</span>
+                </h3>
+                <p class="candidate"><em>Endorsing: {{val.candidate}}</em></p>
+              </div>
+            <div class="panel-body">
+              <span class="phone">phone: {{val.phone}}</span>
+              <span class="fax">fax: {{val.fax}}</span>
+              <span class="email">email: {{val.email}}</span>
+              <span class="twitter">twitter: {{val.twitter}}</span>
+              <span class="facebook">facebook: {{val.facebook}}</span>
+              <span class="youtube">youtube: {{val.youtube}}</span>
+              <span class="website">website: {{val.website}}</span>
+              <span class="address">address: {{val.address}}</span>
+              <span class="Other">Other: {{val.other-social-media}}</span>
+              <span class="notes">notes: {{val.notes}}</span>
+            </div>
+          </div>
           {% endif %}
         {% endfor %}
-        </tbody>
-      </table>
+        <!-- </tbody>
+      </table> -->
     </section>
   </article>
 
