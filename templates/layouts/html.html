@@ -47,21 +47,23 @@
   {% endblock %}
 
   <main role="main" class="main">
-  {% block contents %}
+    <div class="container-fluid">
+    {% block contents %}
 
-    <article>
+      <article>
 
-      <div class="content">
-        <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
-      </div>
+        <div class="content">
+          <h1>{{ title }}</h1>
+          <p>{{ description }}</p>
+        </div>
 
-      {{contents|safe}}
+        {{contents|safe}}
 
-    </article>
+      </article>
 
-  {% endblock %}
-</main>
+    {% endblock %}
+    </div>
+  </main>
 
   {% block footer %}
     {% set footerComponent = "../"+config.footerComponent %}
