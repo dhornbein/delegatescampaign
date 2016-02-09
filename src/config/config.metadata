@@ -12,6 +12,7 @@ stylesheets:
   - 'styles/main.css'
 scripts:
   header:
+    - vendor/jquery/dist/jquery.min.js
     - vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js
   footer:
     - js/brn.js
