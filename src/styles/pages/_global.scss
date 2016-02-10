@@ -20,6 +20,18 @@ body {
   padding: 2em 0;
 }
 
+.bk-tone-btm {
+  background-image:url(../images/halftone-btm.png);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}
+
+.bk-tone-top {
+  background-image:url(../images/halftone-top.png);
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+
 .bk-red {
   background-color:$red;
   color: #FFF;
