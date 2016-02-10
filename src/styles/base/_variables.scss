@@ -10,6 +10,8 @@ $gray-light: #E9E9E9;
 
 /* bootstrap overrides */
 
+$btn-warning-color: #F00;
+
 $body-bg: #fff;
 $nav-inverse: #aaa;
 
@@ -21,11 +23,13 @@ $border-radius-base:        0px;
 $border-radius-large:       0px;
 $border-radius-small:       0px;
 
-$font-family-sans-serif:  'Bangers' Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  'Arvo', Helvetica, Arial, sans-serif;
 $font-family-serif:       'Arvo', Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
+
+$font-family-base: $font-family-serif;
 $font-size-base:          16px;
 
 $font-size-h1:            $font-size-base * 2.75;
@@ -48,9 +52,9 @@ $header-main-bg-color:              #3C8CC9;
 
 // Navbar links
 $navbar-default-link-color:                #fff;
-$navbar-default-link-hover-color:          #fff;
-$navbar-default-link-active-color:         $gray-dark;
-$navbar-default-link-active-bg:            #000;
+$navbar-default-link-hover-color:          lighten($blue,80%);
+$navbar-default-link-active-color:         darken($blue,80%);
+$navbar-default-link-active-bg:            transparent;
 
 $navbar-inverse-bg:                         rgba(0,0,0,.8);
 $navbar-inverse-border:                     none;
@@ -60,21 +64,33 @@ $navbar-inverse-link-hover-color:           darken(#fff, 30%);
 $jumbotron-padding:       2em;
 $jumbotron-font-size:     1em;
 
+
 //== Tabs
 $nav-tabs-border-color:                     none;
 
-$navbar-default-toggle-hover-bg:           #fff;
-$navbar-default-toggle-icon-bar-bg:        #fff;
+$nav-tabs-link-hover-border-color:          transparent;
+
+$nav-tabs-active-link-hover-bg:             transparent;
+$nav-tabs-active-link-hover-color:          transparent;
+$nav-tabs-active-link-hover-border-color:   none;
+
+$nav-tabs-justified-link-border-color:            #ddd;
+$nav-tabs-justified-active-link-border-color:     $body-bg;
+
+$nav-tabs-border-color:                     none;
+
+$navbar-default-toggle-hover-bg:           transparent;
+$navbar-default-toggle-icon-bar-bg:        transparent;
 $navbar-default-toggle-border-color:       transparent;
 
-$navbar-inverse-toggle-hover-bg:            #fff;
-$navbar-inverse-toggle-icon-bar-bg:         #fff;
+$navbar-inverse-toggle-hover-bg:            transparent;
+$navbar-inverse-toggle-icon-bar-bg:         transparent;
 $navbar-inverse-toggle-border-color:        transparent;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       $c-highlight;
+$component-active-bg:       transparent;
 
 $screen-xs:                  640px;
 $screen-sm:                  760px;

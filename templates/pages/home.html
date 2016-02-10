@@ -2,30 +2,29 @@
 
 {% block contents %}
 
-    {% include "../../src/components/molecules/hero/hero.html" %}
+    {#{% include "../../src/components/molecules/hero/hero.html" %}#}
 
-    <div class="container">
+    <section class="row text-center padded">
+      <p class="lead"><strong>Did you know that</strong></p>
+      <h2>Superdelegates</h2>
+      <p class="lead"><strong>can steal our election?</strong></p>
+    </section>
+    <section class="row text-center padded bk-red">
+      <h2>Don't let it happen</h2>
+      <a href="#" class="btn btn-warning btn-lg">Sign Here!</a>
+    </section>
+    <section class="row section-states">
+      <ul>
+      {% for state in collections.states %}
+        <li><a href="states/{{state.title|slug}}">{{state.title|safe}}</a></li>
+      {% endfor %}
+      </ul>
+    </section>
+    <section class="row padded">
+      <div class="col-xs-8 col-xs-offset-2">
+        <p class="lead"><strong>Superdelegates:</strong></p>
+        <p><span class="font-mono">(ˈso͞opərˌdeləɡət)</span> <em>n</em>: A nonelected delegate to a presidential nominating convention, usually an office-holder or influential party leader, who is not pledged to support any particular candidate.</p>
+      </div>
+    </section>
 
-      <section class="row section-states">
-        <ul>
-        {% for state in collections.states %}
-          <li><a href="states/{{state.title|slug}}">{{state.title|safe}}</a></li>
-        {% endfor %}
-        </ul>
-      </section>
-
-      <section class="row section-touts">
-        <!--
-          {# is a swig comment #}
-          this block is just here to show how to include tempaltes
-        -->
-        {#
-          {% set toutClassNames="threeup" %}
-          {% include "../../src/components/molecules/tout/tout.html" %}
-          {% include "../../src/components/molecules/tout/tout.html" %}
-          {% include "../../src/components/molecules/tout/tout.html" %}
-        #}
-      </section>
-
-    </div>
 {% endblock %}
