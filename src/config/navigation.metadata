@@ -1,10 +1,10 @@
 ---
 primary:
-  - name: a link
+  - name: Home
     url: #
-  - name: a link
+  - name: About
     url: #
-  - name: a link
+  - name: Delegates
     url: #
     dropdown:
       - name: A sublink
@@ -19,12 +19,6 @@ primary:
         url: ##
       - name: A sublink
         url: ##
-  - name: a link
-    url: #
-  - name: a link
-    url: #
-  - name: a link
-    url: #
 
 
 
