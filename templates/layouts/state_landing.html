@@ -25,19 +25,38 @@
     </section>
 
     <section class="row padded bk-red bk-tone-btm">
+      {% if total > 0 %}
       <h1 class="text-center"><span class="font-serif">{{ total }}</span> Superdelegates</h1>
-      <h3 class="text-center"><span class="font-serif">{{ bernie }}</span> Sanders - <span class="font-serif">{{ clinton }}</span> Clinton - <span class="font-serif">{{ uncommitted }}</span> Uncommitted</h3>
+      <h3 class="text-center">
+        {% if clinton + bernie > 0 %}
+        <span class="font-serif">{{ bernie }}</span> Sanders - <span class="font-serif">{{ clinton }}</span> Clinton - <span class="font-serif">{{ uncommitted }}</span>
+        {% endif %}
+        Uncommitted</h3>
       <p class="lead text-center">Tell these {{ uncommitted + clinton }} to vote for Bernie!</p>
       <p class="text-center">
-        <a href="#delegate" class="btn btn-warning btn-lg">Sign Here!</a>
+        <a href="#delegate" class="btn btn-warning btn-lg">contact them now</a>
       </p>
+      {% else %}
+      <h2 class="text-center">We don't know of any Superdelegates from {{ title|safe }}</h2>
+      {% endif %}
     </section>
 
     <section class="row delegates-list padded bk-blue">
       <h2 class="text-center">Delegates for {{title|safe}}</h2>
+        <a id="delegate" name="delegate"></a>
+        {% set delCount = 0 %}
         {% for row, val in gSheets["Delegates"].rows %}
           {% if val.state == abbr or val.state == title and val.candidate|lower != "bernie" %}
-          <div class="delegate bk-white col-xs-10 col-xs-offset-1 endorse-{{val.candidate|lower|default('uncommitted')}}">
+            {% set delCount += 1 %}
+
+            {% if delCount % 2 === 0 %}
+              {% set delClass = 'col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-0' %}
+            {% else %}
+              {% set delClass = 'col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-1' %}
+              <div class="row">
+            {% endif %}
+
+          <div class="delegate bk-white {{ delClass }} endorse-{{val.candidate|lower|default('uncommitted')}}">
             <div class="row ">
               <div class="title">{{val.candidate|safe|default('Uncommitted')}}</div>
             </div>
@@ -85,11 +104,12 @@
               <div class="col-xs-6">
                 <p>
                   {% if val.email %}
-                    {{val.email|safe}}
-                  <br>
+                    <a href="mailto:{{val.email|safe}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
+                  {% elseif val.emailform %} 
+                    <a href="https://{{val.emailform|safe|replace('^https?://','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
                   {% endif %}
                   {% if val.website %}
-                    {{val.website|safe}}
+                    <a href="https://{{val.website|safe|replace('^https?://','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-globe"></i> Website</a>
                   {% endif %}
                 </p>
               </div>
@@ -101,6 +121,12 @@
             </div>
             {% endif %}
           </div>
+
+          {% if delCount % 2 === 0 %}
+            </div>
+          {% endif %}
+
+
           {% endif %}
         {% endfor %}
         <!-- </tbody>

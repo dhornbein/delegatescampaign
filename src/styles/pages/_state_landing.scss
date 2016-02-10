@@ -1,7 +1,9 @@
 .delegates-list{
+  & > h2 { margin-bottom: 1em; }
   .delegate {
     margin-bottom: 2em;
     margin-top: 2em;
+    border: 5px solid $blue;
     &.endorse-clinton .title {
       background-color: darken($blue,20%);
     }
@@ -15,9 +17,11 @@
       width: 250px;
     }
     .del-social {
-      .fa-circle {
-        color: darken($yellow,30%);
-        &:hover {
+      a {
+        .fa-circle {
+          color: darken($yellow,30%);
+        }
+        &:hover .fa-circle {
           color: $yellow;
         }
       }
