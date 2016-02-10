@@ -9,6 +9,10 @@ body {
   @extend %breakpoint-visualizer;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .padded {
   padding: 2em 0;
 }
