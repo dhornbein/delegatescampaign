@@ -2233,29 +2233,29 @@ fieldset[disabled] a.button {
     background-color: #fff; }
 
 .btn-warning {
-  color: #F00;
-  background-color: #f0ad4e;
-  border-color: #eea236; }
+  color: #FFF;
+  background-color: #EECA5D;
+  border-color: #ecc246; }
   .btn-warning:focus, .btn-warning.focus {
-    color: #F00;
-    background-color: #ec971f;
-    border-color: #985f0d; }
+    color: #FFF;
+    background-color: #e9bb2f;
+    border-color: #a17d11; }
   .btn-warning:hover {
-    color: #F00;
-    background-color: #ec971f;
-    border-color: #d58512; }
+    color: #FFF;
+    background-color: #e9bb2f;
+    border-color: #ddac17; }
   .btn-warning:active, .btn-warning.active,
   .open > .btn-warning.dropdown-toggle {
-    color: #F00;
-    background-color: #ec971f;
-    border-color: #d58512; }
+    color: #FFF;
+    background-color: #e9bb2f;
+    border-color: #ddac17; }
     .btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus,
     .open > .btn-warning.dropdown-toggle:hover,
     .open > .btn-warning.dropdown-toggle:focus,
     .open > .btn-warning.dropdown-toggle.focus {
-      color: #F00;
-      background-color: #d58512;
-      border-color: #985f0d; }
+      color: #FFF;
+      background-color: #ddac17;
+      border-color: #a17d11; }
   .btn-warning:active, .btn-warning.active,
   .open > .btn-warning.dropdown-toggle {
     background-image: none; }
@@ -2263,11 +2263,11 @@ fieldset[disabled] a.button {
   fieldset[disabled] .btn-warning:hover,
   fieldset[disabled] .btn-warning:focus,
   fieldset[disabled] .btn-warning.focus {
-    background-color: #f0ad4e;
-    border-color: #eea236; }
+    background-color: #EECA5D;
+    border-color: #ecc246; }
   .btn-warning .badge {
-    color: #f0ad4e;
-    background-color: #F00; }
+    color: #EECA5D;
+    background-color: #FFF; }
 
 .btn-danger {
   color: #fff;
@@ -6989,18 +6989,75 @@ The hero's a big deal.
   padding-top: 2em;
   background-color: #3C8CC9; }
 
+.footer {
+  background-color: #191919;
+  color: #EECA5D; }
+  .footer .small-print {
+    color: #D1D1D1; }
+    .footer .small-print a {
+      color: #EECA5D; }
+      .footer .small-print a:hover {
+        color: #a17d11; }
+
 html,
 body,
 body > main {
   background-color: #E9E9E9; }
 
+.text-white {
+  color: #fff; }
+
+.font-mono {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+.font-serif {
+  font-family: "Arvo", Georgia, "Times New Roman", Times, serif; }
+
 .padded {
   padding: 2em 0; }
 
-.bk-red {
-  background-color: #F2422E; }
+.bk-tone-btm {
+  background-image: url(../images/halftone-btm.png);
+  background-position: center bottom;
+  background-repeat: repeat-x; }
 
-.homepage .font-mono {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+.bk-tone-top {
+  background-image: url(../images/halftone-top.png);
+  background-position: center top;
+  background-repeat: repeat-x; }
+
+.bk-red {
+  background-color: #F2422E;
+  color: #FFF; }
+
+.bk-blue {
+  background-color: #3C8CC9;
+  color: #FFF; }
+
+.bk-white {
+  background-color: #FFF;
+  color: #000; }
+
+.delegates-list > h2 {
+  margin-bottom: 1em; }
+
+.delegates-list .delegate {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border: 5px solid #3C8CC9; }
+  .delegates-list .delegate.endorse-clinton .title {
+    background-color: #22567d; }
+  .delegates-list .delegate .title {
+    background-color: black;
+    border: 5px solid white;
+    color: white;
+    margin: -2em auto 1em;
+    padding: 1em 0;
+    text-align: center;
+    width: 250px; }
+  .delegates-list .delegate .del-social a .fa-circle {
+    color: #a17d11; }
+  .delegates-list .delegate .del-social a:hover .fa-circle {
+    color: #EECA5D; }
 
 /*# sourceMappingURL=main.css.map */
