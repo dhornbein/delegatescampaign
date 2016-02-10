@@ -28,11 +28,13 @@
   
     
     
-      <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1454979005037"></script>
+      <script src="vendor/jquery/dist/jquery.min.js?1455089361098"></script>
+    
+      <script src="vendor/bootstrap-sass-twbs/assets/javascripts/bootstrap.min.js?1455089361098"></script>
     
     <!--  -->
     
-      <link rel="stylesheet" type="text/css" href="styles/main.css?1454979005037">
+      <link rel="stylesheet" type="text/css" href="styles/main.css?1455089361098">
     
   
 
@@ -41,50 +43,57 @@
 
   
     
-    <header class="navbar navbar-default ">
+    <header class="header-main">
 
-      <div class="brand navbar-brand">
-  <a href="/" title="Home" rel="home" class="logo">
-    <span class="sr-only">Whatever the Name of This Thing Will Be.</span>
-  </a>
+  <div class="container-fluid">
+    <div class="row">
+  <div class="head-title col-xs-12 text-center">
+    <h1 class="subtitle">Superdelegates for:</h1>
+    <h1 class="title">BERNIE SANDERS!</h1>
+  </div>
+</div>
+  </div>
+
+  <nav class="navbar center">
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="element-invisible">Toggle navigation</span>
+    <span class="icon-bar" aria-hidden="true"></span>
+    <span class="icon-bar" aria-hidden="true"></span>
+    <span class="icon-bar" aria-hidden="true"></span>
+  </button>
 </div>
 
-
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-  <span class="element-invisible">Toggle navigation</span>
-  <span class="icon-bar" aria-hidden="true"></span>
-  <span class="icon-bar" aria-hidden="true"></span>
-  <span class="icon-bar" aria-hidden="true"></span>
-</button>
-
-
-      <div class="navbar-collapse collapse" role="navigation">
-        <h2 class="sr-only">Main menu</h2>
-        <ul id="main-nav" class="nav navbar-nav links clearfix" role="menubar">
-          
+        
+        <div class="navbar-collapse collapse" role="navigation">
+          <h2 class="sr-only">Main menu</h2>
+          <ul id="main-nav" class="nav navbar-inner links" role="menubar">
             
+              
 
 
-  <li role="presentation" class="a-link " role="menuitem">
-    <a title="" href="a-link"><span>a link</span></a>
+  <li role="presentation" class="home " role="menuitem">
+    <a title="" href="home"><span>Home</span></a>
   </li>
 
 
-          
             
+              
 
 
-  <li role="presentation" class="a-link " role="menuitem">
-    <a title="" href="a-link"><span>a link</span></a>
+  <li role="presentation" class="about " role="menuitem">
+    <a title="" href="about"><span>About</span></a>
   </li>
 
 
-          
             
+              
 
 
   <li class="dropdown ">
-    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>a link</span><span class="caret"></span></a>
+    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Delegates</span><span class="caret"></span></a>
     <ul class="dropdown-menu">
       
         <li><a href="">A sublink</a></li>
@@ -103,83 +112,53 @@
   </li>
 
 
-          
             
-
-
-  <li role="presentation" class="a-link " role="menuitem">
-    <a title="" href="a-link"><span>a link</span></a>
-  </li>
-
-
-          
-            
-
-
-  <li role="presentation" class="a-link " role="menuitem">
-    <a title="" href="a-link"><span>a link</span></a>
-  </li>
-
-
-          
-            
-
-
-  <li role="presentation" class="a-link " role="menuitem">
-    <a title="" href="a-link"><span>a link</span></a>
-  </li>
-
-
-          
-        </ul>
+          </ul>
+        </div>
       </div>
 
-</header>
+</nav>
 
+
+</header>
   
 
   <main role="main" class="main">
-  
+    <div class="container-fluid">
+    
 
-    <article class="hero-unit" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/SMPTE_Color_Bars_16x9.svg/2000px-SMPTE_Color_Bars_16x9.svg.png);">
-  <div class="container">
-    <div class="content">
-      <h1 class="title">
-        <a href="#">An Informative Headline of Some Sort, Explains Things</a>
-      </h1>
-      <p class="blurb"></p>
-      <button role="button" class="button "><span>CTA of Some Sort</span><i class="icon terminal" aria-hidden="true"></i></button>
+    
 
-    </div>
-  </div>
-</article>
+    <section class="row text-center padded">
+      <p class="lead"><strong>Did you know that</strong></p>
+      <h2>Superdelegates</h2>
+      <p class="lead"><strong>can steal our election?</strong></p>
+    </section>
+    <section class="row text-center padded bk-red">
+      <h2>Don't let it happen</h2>
+      <a href="#" class="btn btn-warning btn-lg">Sign Here!</a>
+    </section>
+    <section class="row section-states">
+      <ul>
+      
+        <li><a href="states/michigan">Michigan</a></li>
+      
+        <li><a href="states/new-york">New York</a></li>
+      
+        <li><a href="states/north-carolina">North Carolina</a></li>
+      
+      </ul>
+    </section>
+    <section class="row padded">
+      <div class="col-xs-8 col-xs-offset-2">
+        <p class="lead"><strong>Superdelegates:</strong></p>
+        <p><span class="font-mono">(ˈso͞opərˌdeləɡət)</span> <em>n</em>: A nonelected delegate to a presidential nominating convention, usually an office-holder or influential party leader, who is not pledged to support any particular candidate.</p>
+      </div>
+    </section>
 
-
-    <div class="container">
-
-      <section class="row section-states">
-        <ul>
-        
-          <li><a href="states/michigan">Michigan</a></li>
-        
-          <li><a href="states/new-york">New York</a></li>
-        
-          <li><a href="states/north-carolina">North Carolina</a></li>
-        
-        </ul>
-      </section>
-
-      <section class="row section-touts">
-        <!--
-          
-          this block is just here to show how to include tempaltes
-        -->
-        
-      </section>
 
     </div>
-
-</main>
+  </main>
 
   
     
@@ -252,7 +231,7 @@
 
   
     
-      <script src="js/brn.js?1454979005041"></script>
+      <script src="js/brn.js?1455089361099"></script>
     
   
 
