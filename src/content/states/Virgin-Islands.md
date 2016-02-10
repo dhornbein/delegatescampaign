@@ -1,5 +1,5 @@
 ---
 template: layouts/state_landing.html
-title: "Michigan"
-abbr: MI
+title: "Virgin Islands"
+abbr: VI
 ---
