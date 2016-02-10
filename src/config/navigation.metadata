@@ -1,24 +1,9 @@
 ---
 primary:
   - name: Home
-    url: #
-  - name: About
-    url: #
+    url: /
   - name: Delegates
-    url: #
-    dropdown:
-      - name: A sublink
-        url: ##
-      - name: A sublink
-        url: ##
-      - name: A sublink
-        url: ##
-      - name: A sublink
-        url: ##
-      - name: A sublink
-        url: ##
-      - name: A sublink
-        url: ##
+    url: /#delegates
 
 
 

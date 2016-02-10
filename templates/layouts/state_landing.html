@@ -66,21 +66,21 @@
               </div>
               <div class="col-xs-6 del-social">
                 {% if val.facebook %}
-                <a href="{{val.facebook}}">
+                <a href="{{val.facebook|replace('\s','')}}">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                   </span></a>
                 {% endif %}
                 {% if val.twitter %}
-                <a href="https://twitter.com/{{val.twitter|safe|replace('(https?://)?(twitter.com/)?@?','')}}">
+                <a href="https://twitter.com/{{val.twitter|safe|replace('(https?://)?(twitter.com/)?@?','')|replace('\s','')}}">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span></a>
                 {% endif %}
                 {% if val.youtube %}
-                <a href="{{val.youtube}}">
+                <a href="{{val.youtube|replace('\s','')}}">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
@@ -104,12 +104,12 @@
               <div class="col-xs-6">
                 <p>
                   {% if val.email %}
-                    <a href="mailto:{{val.email|safe}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
+                    <a href="mailto:{{val.email|safe|replace('\s','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
                   {% elseif val.emailform %} 
-                    <a href="https://{{val.emailform|safe|replace('^https?://','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
+                    <a href="https://{{val.emailform|safe|replace('^https?://','')|replace('\s','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
                   {% endif %}
                   {% if val.website %}
-                    <a href="https://{{val.website|safe|replace('^https?://','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-globe"></i> Website</a>
+                    <a href="https://{{val.website|safe|replace('^https?://','')|replace('\s','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-globe"></i> Website</a>
                   {% endif %}
                 </p>
               </div>
