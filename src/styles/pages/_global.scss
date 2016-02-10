@@ -13,10 +13,24 @@ body {
   color: #fff;
 }
 
+.font-mono { font-family: $font-family-monospace; }
+.font-serif { font-family: $font-family-serif; }
+
 .padded {
   padding: 2em 0;
 }
 
 .bk-red {
   background-color:$red;
+  color: #FFF;
+}
+
+.bk-blue {
+  background-color:$blue;
+  color: #FFF;
+}
+
+.bk-white {
+  background-color: #FFF;
+  color: #000;
 }

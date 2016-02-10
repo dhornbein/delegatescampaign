@@ -1,3 +1,33 @@
-.state-landing {
+.delegates-list{
+  .delegate {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    &.endorse-clinton .title {
+      background-color: darken($blue,20%);
+    }
+    .title {
+      background-color: black;
+      border: 5px solid white;
+      color: white;
+      margin: -2em auto 1em;
+      padding: 1em 0;
+      text-align: center;
+      width: 250px;
+    }
+    .del-social {
+      .fa-circle {
+        color: darken($yellow,30%);
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+    .del-contact {
 
+    }
+    .del-note {
+
+    }
+  }
 }
+
