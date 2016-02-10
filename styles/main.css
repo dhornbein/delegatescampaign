@@ -5117,36 +5117,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-body {
-  position: relative; }
-  @media (min-width: 640px) {
-    body:before {
-      content: 'xs';
-      width: 25px;
-      height: 20px;
-      padding: 3px;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      z-index: 999;
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      font-size: 12px;
-      border-top-right-radius: 5px; } }
-  @media (min-width: 760px) {
-    body:before {
-      content: 'sm'; } }
-  @media (min-width: 1000px) {
-    body:before {
-      content: 'md'; } }
-  @media (min-width: 1200px) {
-    body:before {
-      content: 'lg'; } }
-  @media (min-width: 1500px) {
-    body:before {
-      content: 'xl'; } }
-
 .button, .tout .button, .list-group, .tout ul {
   transition-duration: .25s;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); }
