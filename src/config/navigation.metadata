@@ -1,9 +1,9 @@
 ---
 primary:
   - name: Home
-    url: /
+    url: "#"
   - name: Delegates
-    url: /#delegates
+    url: "#delegates"
 
 
 
