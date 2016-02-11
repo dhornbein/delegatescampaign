@@ -7014,9 +7014,11 @@ body > main {
 .delegates-list .delegate {
   margin-bottom: 2em;
   margin-top: 2em;
-  border: 5px solid #3C8CC9; }
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3); }
   .delegates-list .delegate.endorse-clinton .title {
     background-color: #22567d; }
+  .delegates-list .delegate.endorse-bernie .title {
+    background-color: #F2422E; }
   .delegates-list .delegate .title {
     background-color: black;
     border: 5px solid white;
@@ -7025,9 +7027,40 @@ body > main {
     padding: 1em 0;
     text-align: center;
     width: 250px; }
-  .delegates-list .delegate .del-social a .fa-circle {
-    color: #a17d11; }
-  .delegates-list .delegate .del-social a:hover .fa-circle {
-    color: #EECA5D; }
+  .delegates-list .delegate .del-social {
+    margin-bottom: 1em; }
+    .delegates-list .delegate .del-social a .fa-circle {
+      color: #a17d11; }
+    .delegates-list .delegate .del-social a:hover .fa-circle {
+      color: #EECA5D; }
+    .delegates-list .delegate .del-social a .btn, .delegates-list .delegate .del-social a .button {
+      color: black;
+      border-radius: 10px; }
+  .delegates-list .delegate .del-note .del-note-header {
+    border-bottom: 1px solid #D1D1D1;
+    margin-bottom: .5em;
+    text-align: center; }
+    .delegates-list .delegate .del-note .del-note-header span {
+      background: #D1D1D1;
+      padding: 5px 10px 1px;
+      float: left;
+      border-radius: 3px 3px 0 0; }
+  .delegates-list .delegate .del-note p {
+    padding: 1em; }
+  @media (max-width: 640px) {
+    .delegates-list .delegate .del-note .del-note-header {
+      margin-top: .5em; }
+      .delegates-list .delegate .del-note .del-note-header span {
+        font-size: 13px;
+        float: none;
+        display: inline-block; }
+    .delegates-list .delegate .del-note p {
+      font-size: 13px; } }
+
+@media (min-width: 1200px) {
+  .delegates-list .delegate:last-child:not(:only-child) {
+    margin-left: 10px; }
+  .delegates-list .delegate:only-child {
+    margin-left: 30%; } }
 
 /*# sourceMappingURL=main.css.map */
