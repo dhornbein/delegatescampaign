@@ -9,6 +9,10 @@
       background-color: darken($blue,20%);
     }
 
+    &.endorse-bernie .title {
+      background-color: $red;
+    }
+
     .title {
       background-color: black;
       border: 5px solid white;
@@ -48,7 +52,7 @@
           border-radius: 3px 3px 0 0;
         }
       }
-      
+
       p {
         padding: 1em;
       }
@@ -72,7 +76,8 @@
 
 @media(min-width:$screen-lg) {
 .delegates-list{
-  .delegate:last-child { margin-left:10px; }
+  .delegate:last-child:not(:only-child) { margin-left:10px; }
+  .delegate:only-child { margin-left: 30%; }
   }
 }
 
