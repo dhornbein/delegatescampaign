@@ -5,9 +5,11 @@
     {#{% include "../../src/components/molecules/hero/hero.html" %}#}
 
     <section class="row text-center padded">
-      <p class="lead"><strong>Did you know that</strong></p>
-      <h2>Superdelegates</h2>
-      <p class="lead"><strong>can steal our election?</strong></p>
+      <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 bk-white padded-sm">
+        <p class="lead"><strong>Did you know that</strong></p>
+        <h1>Superdelegates</h1>
+        <p class="lead"><strong>can steal our election?</strong></p>
+      </div>
     </section>
     
     <section class="row text-center padded bk-red bk-tone-btm">
@@ -21,18 +23,21 @@
       </div>
     </section>
     
-    <section class="row section-states">
-      <div class="col-sm-12 col-lg-8 col-lg-offset-2">
-        <h3 id="delegates" class="text-center">State Superdelegates</h3>
-        <hr>
-        {% include "../../src/components/molecules/state_list/state_list.html" %}
+    <section class="row padded">
+      <div class="col-xs-8 col-xs-offset-2">
+        <h2 class="text-center">Superwhat?</h2>
+        <div class="row">
+          <p class="col-sm-6 lead text-right hidden-xs"><strong class="">Superdelegates:</strong></p>
+          <p class="col-sm-6 lead visible-xs"><strong class="">Superdelegates:</strong></p>
+          <p class="col-sm-6"><span class="font-mono">(ˈso͞opərˌdeləɡət)</span> <em>n</em>: A nonelected delegate to a presidential nominating convention, usually an office-holder or influential party leader, who is not pledged to support any particular candidate.</p>
+        </div>
       </div>
     </section>
     
-    <section class="row padded">
-      <div class="col-xs-8 col-xs-offset-2">
-        <p class="lead"><strong>Superdelegates:</strong></p>
-        <p><span class="font-mono">(ˈso͞opərˌdeləɡət)</span> <em>n</em>: A nonelected delegate to a presidential nominating convention, usually an office-holder or influential party leader, who is not pledged to support any particular candidate.</p>
+    <section class="row section-states bk-blue">
+      <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+        <h2 id="delegates" class="text-center">State Superdelegates</h2>
+        {% include "../../src/components/molecules/state_list/state_list.html" %}
       </div>
     </section>
 

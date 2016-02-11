@@ -16,8 +16,23 @@ body {
 .font-mono { font-family: $font-family-monospace; }
 .font-serif { font-family: $font-family-serif; }
 
+@media (min-width: $screen-sm){
+  .lead {
+      font-size: 30px;
+  }
+}
+
 .padded {
-  padding: 2em 0;
+  padding: 7em 0;
+}
+.padded-sm {
+  padding: 3em 0;
+}
+
+.btn-warning {
+    background: #EECA5D;
+    border-radius: 2px;
+    font-weight: bold;
 }
 
 .bk-tone-btm {
