@@ -19,6 +19,23 @@
   <meta name="msapplication-TileColor" content="#f00">
   <meta name="msapplication-TileImage" content="/images/tileicon.png">
 
+  <meta itemprop="name" content="{{ title }}" />
+  <!-- <meta itemprop="image" content="[ LISTING IMAGE ]" /> -->
+  <meta itemprop="description" content="{{ description }}" />
+   
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="{{ definition }}" />
+  <!-- <meta property="og:image" content="[ LISTING IMAGE ]" /> -->
+  <meta property="og:url" content="http://superdelegatedemocracy.com/" />
+  <meta property="og:site_name" content="{{ title }}" />
+   
+  <meta name="twitter:card" content="{{ description }}">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ definition }}">
+  <!-- <meta name="twitter:image" content="[ LISTING IMAGE ]"> -->
+  <meta name="twitter:url" content="http://superdelegatedemocracy.com/">
+
   <title>
     {% block title %}{{config.title | title}}{% endblock %}
   </title>
