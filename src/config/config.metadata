@@ -2,6 +2,7 @@
 title: Superdelegate Democracy
 description: If you want Bernie elected, you better know what 'Superdelegate' means.
 definition: "Superdelegates are party leaders (often donors) and politicians who get to cast special 'VIP' votes for President at the Democratic National Conventions. They're about 700 people, insiders and party elites, and they get a way bigger say than any one state."
+shareImage: "images/social.jpg"
 headerComponent: "../src/components/organisms/header/header.html"
 footerComponent: "../src/components/organisms/footer/footer.html"
 placeholderImage: https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/SMPTE_Color_Bars_16x9.svg/2000px-SMPTE_Color_Bars_16x9.svg.png
