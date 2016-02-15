@@ -4,6 +4,7 @@ description: "No matter who we support for President, we can all agree Democrati
 definition: "Superdelegates are party leaders (often donors) and politicians who get to cast special 'VIP' votes for President at the Democratic National Conventions. They're about 700 people, insiders and party elites, and they get a way bigger say than any one state."
 headerSubTitle : "Dear Superdelegates:"
 headerTitle : "Don't Deny Democracy"
+tagline: "DNC Superdelegates could flip the Democratic primary results if they wanted to. We think that's wrong - join us."
 shareImage: "images/social.jpg"
 headerComponent: "../src/components/organisms/header/header.html"
 footerComponent: "../src/components/organisms/footer/footer.html"

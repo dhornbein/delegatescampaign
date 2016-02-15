@@ -7,6 +7,7 @@
   font-size: 24px;
   color: #FFFFFF;
   line-height: 43px;
+  margin-bottom: 0;
   }
 
   .title {
@@ -18,5 +19,11 @@
   line-height: 69px;
   text-shadow: -2px -2px 0px #1A6FAF;
   margin: 0 0 50px;
+  }
+
+  p {
+    color:white;
+    padding: 0 2em;
+    font-size: 20px;
   }
 }
