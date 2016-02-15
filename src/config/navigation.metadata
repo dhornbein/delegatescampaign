@@ -2,8 +2,16 @@
 primary:
   - name: Home
     url: "#"
-  - name: Delegates
-    url: "#delegates"
+  - name: The Problem
+    url: "#problem"
+  - name: Our Letter
+    url: "#letter"
+  - name: Take Action
+    url: "#action"
+  - name: More Info
+    url: "#info"
+  - name: Who Are We?
+    url: "#about"
 
 
 
