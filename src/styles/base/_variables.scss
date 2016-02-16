@@ -67,31 +67,29 @@ $jumbotron-font-size:     1em;
 
 
 //== Tabs
-$nav-tabs-border-color:                     none;
+$nav-tabs-border-color:                     $gray-light;
 
-$nav-tabs-link-hover-border-color:          transparent;
+$nav-tabs-link-hover-border-color:          $gray-mid;
 
-$nav-tabs-active-link-hover-bg:             transparent;
-$nav-tabs-active-link-hover-color:          transparent;
-$nav-tabs-active-link-hover-border-color:   none;
+$nav-link-hover-bg:             rgba(0,0,0,.25);
+$nav-link-hover-color:          $yellow;
 
-$nav-tabs-justified-link-border-color:            #ddd;
-$nav-tabs-justified-active-link-border-color:     $body-bg;
+$nav-pills-border-radius:                   4px;
+$nav-pills-active-link-hover-color:         $gray-light;
+$nav-pills-active-link-hover-bg:            rgba(0,0,0,.5);
 
-$nav-tabs-border-color:                     none;
+// $navbar-default-toggle-hover-bg:           transparent;
+// $navbar-default-toggle-icon-bar-bg:        transparent;
+// $navbar-default-toggle-border-color:       transparent;
 
-$navbar-default-toggle-hover-bg:           transparent;
-$navbar-default-toggle-icon-bar-bg:        transparent;
-$navbar-default-toggle-border-color:       transparent;
-
-$navbar-inverse-toggle-hover-bg:            transparent;
-$navbar-inverse-toggle-icon-bar-bg:         transparent;
-$navbar-inverse-toggle-border-color:        transparent;
+// $navbar-inverse-toggle-hover-bg:            transparent;
+// $navbar-inverse-toggle-icon-bar-bg:         transparent;
+// $navbar-inverse-toggle-border-color:        transparent;
 
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    #fff;
+$component-active-color:    #000;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       transparent;
+$component-active-bg:       $yellow;
 
 $screen-xs:                  640px;
 $screen-sm:                  760px;

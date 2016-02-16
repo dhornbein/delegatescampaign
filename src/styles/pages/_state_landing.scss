@@ -76,10 +76,26 @@
   }
 }
 
-@media(min-width:$screen-lg) {
+@media(min-width:$screen-md) {
 .delegates-list{
   .delegate:last-child:not(:only-child) { margin-left:10px; }
   .delegate:only-child { margin-left: 30%; }
   }
 }
 
+.delegate-table {
+  &.endorse-clinton .endorsing {
+    background-color: darken($blue,20%);
+  }
+
+  &.endorse-bernie .endorsing {
+    background-color: $red;
+  }
+
+  .endorsing {
+    background-color: black;
+    background-image: url(../images/diagonal.png);
+    color: white;
+    text-align: center;
+  }
+}

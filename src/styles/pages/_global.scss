@@ -77,3 +77,10 @@ body {
 input,textarea {
   color: $gray-dark;
 }
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills .nav li { display:inline; }
+.centered-pills .nav a { float:left; }
+* html .centered-pills .nav ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills .nav ul.nav-pills { display:inline; } /* IE7 */

@@ -11,7 +11,7 @@
 
     {% set lastName = val.lastname|slug %}
     {% set delegates[lastName] = val %}
-    
+
     {% set total += 1 %}
     {% if val.candidate|lower == "clinton" %}
       {% set clinton += 1 %}
@@ -34,11 +34,27 @@
     </section>
     
     {% if total > 0 %}
-    <section class="row delegates-list padded bk-blue">
-      <h2 class="text-center">Delegates for {{title|safe}}</h2>
-      <a id="delegate" name="delegate"></a>
+    <section id="delegate" class="row delegates-list padded bk-blue">
       <div class="col-xs-12">
-        {% include "../../src/components/molecules/delegate_list/delegate_list.html" %}
+
+        <!-- Nav tabs -->
+        <div class="centered-pills">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#cards" aria-controls="cards" role="tab" data-toggle="tab"><i class="fa fa-th-large fa-lg"></i> Cards</a></li>
+            <li role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab"><i class="fa fa-table fa-lg"></i> Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="cards">
+            {% include "../../src/components/molecules/delegate_list/delegate_list.html" %}
+          </div>
+          <div role="tabpanel" class="tab-pane bk-white table-responsive" id="table">
+            {% include "../../src/components/molecules/delegate_list/delegate_table.html" %}
+          </div>
+        </div>
+
       </div>
     </section>
     {% endif %}
