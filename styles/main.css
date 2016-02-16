@@ -2448,10 +2448,10 @@ tbody.collapse.in {
   background-color: #f5f5f5; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #EECA5D; }
+  background-color: transparent; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #E9E9E9; }
@@ -2849,7 +2849,7 @@ tbody.collapse.in {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: rgba(0, 0, 0, 0.25); }
+        background-color: #eeeeee; }
     .nav > li.disabled > a {
       color: #E9E9E9; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
@@ -2858,7 +2858,7 @@ tbody.collapse.in {
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #eeeeee;
     border-color: #337ab7; }
   .nav .nav-divider {
     height: 1px;
@@ -2869,7 +2869,7 @@ tbody.collapse.in {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid #E9E9E9; }
+  border-bottom: 1px solid none; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -2879,23 +2879,23 @@ tbody.collapse.in {
       border: 1px solid transparent;
       border-radius: 0px 0px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #D1D1D1 #D1D1D1 #E9E9E9; }
+        border-color: transparent transparent none; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: #555555;
-      background-color: #fff;
-      border: 1px solid #ddd;
+      color: transparent;
+      background-color: transparent;
+      border: 1px solid none;
       border-bottom-color: transparent;
       cursor: default; }
 
 .nav-pills > li {
   float: left; }
   .nav-pills > li > a {
-    border-radius: 4px; }
+    border-radius: 0px; }
   .nav-pills > li + li {
     margin-left: 2px; }
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #E9E9E9;
-    background-color: rgba(0, 0, 0, 0.5); }
+    color: #fff;
+    background-color: transparent; }
 
 .nav-stacked > li {
   float: none; }
@@ -3252,11 +3252,11 @@ tbody.collapse.in {
     color: #ccc;
     background-color: transparent; }
   .navbar-default .navbar-toggle {
-    border-color: #ddd; }
+    border-color: transparent; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #ddd; }
+      background-color: transparent; }
     .navbar-default .navbar-toggle .icon-bar {
-      background-color: #888; }
+      background-color: transparent; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #e7e7e7; }
@@ -3310,11 +3310,11 @@ tbody.collapse.in {
     color: #444;
     background-color: transparent; }
   .navbar-inverse .navbar-toggle {
-    border-color: #333; }
+    border-color: transparent; }
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-      background-color: #333; }
+      background-color: transparent; }
     .navbar-inverse .navbar-toggle .icon-bar {
-      background-color: #fff; }
+      background-color: transparent; }
   .navbar-inverse .navbar-collapse,
   .navbar-inverse .navbar-form {
     border-color: rgba(0, 0, 0, 0.8); }
@@ -3876,9 +3876,9 @@ button.list-group-item {
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
-  color: #000;
-  background-color: #EECA5D;
-  border-color: #EECA5D; }
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent; }
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
   .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading,
@@ -3888,7 +3888,7 @@ button.list-group-item {
   .list-group-item.active:focus .list-group-item-heading > .small {
     color: inherit; }
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-    color: white; }
+    color: rgba(102, 102, 102, 0); }
 
 .list-group-item-success {
   color: #3c763d;
@@ -6840,11 +6840,6 @@ You know, icons and such
 .fa-meanpath:before {
   content: ""; }
 
-html #can_embed_form #d_sharing,
-html #can_embed_form #action_info .action_info_user,
-html #can_embed_form #action_info .action_info_user a {
-  color: inherit; }
-
 .head-title .subtitle {
   /* Superdelegates for: */
   transform: rotate(355deg);
@@ -6852,8 +6847,7 @@ html #can_embed_form #action_info .action_info_user a {
   font-weight: bold;
   font-size: 24px;
   color: #FFFFFF;
-  line-height: 43px;
-  margin-bottom: 0; }
+  line-height: 43px; }
 
 .head-title .title {
   /* BERNIE SANDERS!: */
@@ -6864,11 +6858,6 @@ html #can_embed_form #action_info .action_info_user a {
   line-height: 69px;
   text-shadow: -2px -2px 0px #1A6FAF;
   margin: 0 0 50px; }
-
-.head-title p {
-  color: white;
-  padding: 0 2em;
-  font-size: 20px; }
 
 /*
 Button
@@ -6997,20 +6986,15 @@ body > main {
 .font-serif {
   font-family: "Arvo", Georgia, "Times New Roman", Times, serif; }
 
-.lead-plus {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.4; }
-
 @media (min-width: 760px) {
-  .lead-plus {
+  .lead {
     font-size: 30px; } }
 
 .padded {
-  padding: 3em 0; }
+  padding: 7em 0; }
 
 .padded-sm {
-  padding: 1.5em 0; }
+  padding: 3em 0; }
 
 .btn-warning {
   background: #EECA5D;
@@ -7034,41 +7018,10 @@ body > main {
 .bk-blue {
   background-color: #3C8CC9;
   color: #FFF; }
-  .bk-blue a {
-    color: #EECA5D; }
-    .bk-blue a:hover {
-      color: #fdf7e7; }
 
 .bk-white {
   background-color: #FFF;
   color: #000; }
-
-input, textarea {
-  color: #191919; }
-
-.centered-pills {
-  text-align: center; }
-
-.centered-pills ul.nav-pills {
-  display: inline-block; }
-
-.centered-pills .nav li {
-  display: inline; }
-
-.centered-pills .nav a {
-  float: left; }
-
-* html .centered-pills .nav ul.nav-pills {
-  display: inline; }
-
-/* IE6 */
-* + html .centered-pills .nav ul.nav-pills {
-  display: inline; }
-
-/* IE7 */
-.stat-title {
-  margin: 0;
-  font-size: 95px; }
 
 .delegates-list > h2 {
   margin-bottom: 2em; }
@@ -7079,8 +7032,7 @@ input, textarea {
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3); }
   .delegate.endorse-clinton .title {
     background-color: #22567d; }
-  .delegate.endorse-bernie .title,
-  .delegate.endorse-sanders .title {
+  .delegate.endorse-bernie .title {
     background-color: #F2422E; }
   .delegate .title {
     background-color: black;
@@ -7121,23 +7073,10 @@ input, textarea {
     .delegate .del-note p {
       font-size: 13px; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .delegates-list .delegate:last-child:not(:only-child) {
     margin-left: 10px; }
   .delegates-list .delegate:only-child {
     margin-left: 30%; } }
-
-.delegate-table.endorse-clinton .endorsing {
-  background-color: #22567d; }
-
-.delegate-table.endorse-bernie .endorsing,
-.delegate-table.endorse-sanders .endorsing {
-  background-color: #F2422E; }
-
-.delegate-table .endorsing {
-  background-color: black;
-  background-image: url(../images/diagonal.png);
-  color: white;
-  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
