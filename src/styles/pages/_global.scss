@@ -61,6 +61,12 @@ body {
 .bk-blue {
   background-color:$blue;
   color: #FFF;
+  a {
+    color: $yellow;
+    &:hover {
+      color: lighten($yellow,30%);
+    }
+  }
 }
 
 .bk-white {
