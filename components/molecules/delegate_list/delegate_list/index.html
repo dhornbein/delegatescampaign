@@ -1,17 +1,14 @@
-    {% set delCount = 0 %}
-    {% for row, val in gSheets["Delegates"].rows %}
-      {% if val.state == abbr or val.state == title %}
+    {% set order = delegates|sort %}
+    {% for delegate in order %}
+      {% set val = delegates[delegate] %}
+      {% if loop.index % 2 === 0 %}
+        {% set delClass = 'col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-0' %}
+      {% else %}
+        {% set delClass = 'col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1' %}
+        <div class="row">
+      {% endif %}
 
-        {% set delCount += 1 %}
-
-        {% if delCount % 2 === 0 %}
-          {% set delClass = 'col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-0' %}
-        {% else %}
-          {% set delClass = 'col-xs-10 col-xs-offset-1 col-lg-5 col-lg-offset-1' %}
-          <div class="row">
-        {% endif %}
-
-      <div class="delegate bk-white {{ delClass }} endorse-{{val.candidate|lower|default('uncommitted')}}">
+      <div class="delegate delegate-{{ loop.index }} bk-white {{ delClass }} endorse-{{val.candidate|lower|default('uncommitted')}}">
         <div class="row ">
           <div class="title">{{val.candidate|safe|default('Uncommitted')}}</div>
         </div>
@@ -70,10 +67,8 @@
         {% endif %}
       </div>
 
-      {% if delCount % 2 === 0 %}
+      {% if loop.index % 2 === 0 or loop.last %}
         </div>
       {% endif %}
 
-
-      {% endif %}
     {% endfor %}
