@@ -14,13 +14,11 @@
     </section>
     
     <section class="row text-center padded bk-red bk-tone-btm">
-      <div class="col-xs-12">
-        <h2 class="text-white">Don't let it happen</h2>
-        <a href="http://pac.petitions.moveon.org/sign/superdelegates-dont-deny" class="btn btn-warning btn-lg">Sign Here!</a>
-        <br>
+      <div class="col-sm-12 col-md-4">
+        {{ petition.text }}
       </div>
-      <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <iframe src="http://petitions.moveon.org/embed/widget.html?v=3&name=superdelegates-dont-deny" class="moveon-petition bk-white" id="petition-embed" style="width:100%;height: 430px;border:none;border-radius: 10px;margin-top:1em;"></iframe>
+      <div class="col-sm-12 col-md-8">
+        {% include "../../src/components/atoms/action_network_embed/action_network_embed.html" %}
       </div>
     </section>
     

@@ -6,6 +6,9 @@ headerSubTitle : "Dear Superdelegates:"
 headerTitle : "Don't Deny Democracy"
 tagline: "DNC Superdelegates could flip the Democratic primary results if they wanted to. We think that's wrong - join us."
 shareImage: "images/social.jpg"
+petition:
+  url: https://actionnetwork.org/petitions/superdelegates-dont-deny-democracy
+  name: superdelegates-dont-deny-democracy
 headerComponent: "../src/components/organisms/header/header.html"
 footerComponent: "../src/components/organisms/footer/footer.html"
 placeholderImage: https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/SMPTE_Color_Bars_16x9.svg/2000px-SMPTE_Color_Bars_16x9.svg.png
