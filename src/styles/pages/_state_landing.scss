@@ -1,3 +1,8 @@
+.stat-title {
+  margin: 0;
+  font-size: 95px;
+}
+
 .delegates-list{
   & > h2 { margin-bottom: 2em; }
 }
@@ -11,7 +16,8 @@
     background-color: darken($blue,20%);
   }
 
-  &.endorse-bernie .title {
+  &.endorse-bernie .title,
+  &.endorse-sanders .title {
     background-color: $red;
   }
 
@@ -88,7 +94,8 @@
     background-color: darken($blue,20%);
   }
 
-  &.endorse-bernie .endorsing {
+  &.endorse-bernie .endorsing,
+  &.endorse-sanders .endorsing {
     background-color: $red;
   }
 
