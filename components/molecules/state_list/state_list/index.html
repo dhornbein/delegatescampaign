@@ -1,7 +1,7 @@
     <div class="row">
       {% for state in collections.states %}
         {% if loop.first or loop.index == 20 or loop.index == 39 %}
-          <div class="col-xs-12 col-sm-4 hidden-xs hidden-sm">
+          <div class="col-xs-12 col-sm-4">
             <div class="list-group">
         {% endif %}
           
@@ -10,29 +10,6 @@
         {% if loop.last or loop.index == 19 or loop.index == 38 %}
             </div>
           </div>
-        {% endif %}
-      {% endfor %}
-
-      {% for state in collections.states %}
-        {% if loop.first %}
-          <script>
-              $(function(){
-                // bind change event to select
-                $('#stateSelect').on('change', function () {
-                    var url = $(this).val(); // get selected value
-                    if (url) { // require a URL
-                        window.location = url; // redirect
-                    }
-                    return false;
-                });
-              });
-          </script>
-          <select class="hidden-md hidden-lg center-block" name="stateSelect" id="stateSelect">
-            <option value="" selected>Choose a State</option>
-        {% endif %}
-            <option value="{{ baseURL }}states/{{state.title|slug}}">{{state.title|safe}}</option>
-        {% if loop.last %}
-          </select>
         {% endif %}
       {% endfor %}
     </div>
