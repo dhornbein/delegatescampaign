@@ -1,0 +1,59 @@
+{% set order = delegates|sort %}
+<table class="table table-striped table-hover">
+  <th>
+    <td>Endorsing</td>
+    <td>Name</td>
+    <td>Title</td>
+    <td>Social Media</td>
+    <td>Notes</td>
+  </th>
+{% for delegate in order %}
+  {% set val = delegates[delegate] %}
+  
+  {% set trClass %}
+
+  <tr class="delegate delegate-{{ loop.index }} endorse-{{val.candidate|lower|default('uncommitted')}}">
+    <td>{{val.candidate|safe|default('Uncommitted')}}|title</td>
+    <td>{{val.name|safe}}</td>
+    <td>{{val.title|safe}}</td>
+    <td{% if not val.notes %} colspan="2"{% endif %}>
+      {% if val.facebook or val.twitter or val.youtube or val.website %}
+        {% if val.facebook %}
+        <a href="{{val.facebook|replace('\s','')}}">
+          <span class="fa-stack fa-lg visible-xs-inline-block">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span><span class="hidden-xs btn btn-warning"><i class="fa fa-facebook fa-lg"></i> Facebook</span></a>
+        {% endif %}
+        {% if val.twitter %}
+        <a href="https://twitter.com/{{val.twitter|safe|replace('(https?://)?(twitter.com/)?@?','')|replace('\s','')}}">
+          <span class="fa-stack fa-lg visible-xs-inline-block">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span><span class="hidden-xs btn btn-warning"><i class="fa fa-twitter fa-lg"></i> Twitter</span></a>
+        {% endif %}
+        {% if val.youtube %}
+        <a href="{{val.youtube|replace('\s','')}}">
+          <span class="fa-stack fa-lg visible-xs-inline-block">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+          </span><span class="hidden-xs btn btn-warning"><i class="fa fa-youtube fa-lg"></i> Youtube</span></a>
+        {% endif %}
+        {% if val.website %}
+        <a href="https://{{val.website|safe|replace('^https?://','')|replace('\s','')}}">
+          <span class="fa-stack fa-lg visible-xs-inline-block">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+          </span><span class="hidden-xs btn btn-warning"><i class="fa fa-globe fa-lg"></i> Website</span></a>
+        {% endif %}
+      {% endif %}
+    </td>
+    {% if val.notes %}
+    <td>
+        <span class="font-mono">{{val.notes|safe}}</span>
+    </td>
+    {% endif %}
+  </tr>
+
+{% endfor %}
+</table>
