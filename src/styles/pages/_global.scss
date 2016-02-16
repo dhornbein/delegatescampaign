@@ -16,8 +16,14 @@ body {
 .font-mono { font-family: $font-family-monospace; }
 .font-serif { font-family: $font-family-serif; }
 
+.lead-plus {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
 @media (min-width: $screen-sm){
-  .lead {
+  .lead-plus {
       font-size: 30px;
   }
 }

@@ -4,11 +4,12 @@
 
     {#{% include "../../src/components/molecules/hero/hero.html" %}#}
 
-    <section class="row text-center padded">
-      <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 bk-white padded-sm">
-        <p class="lead"><strong>Did you know that</strong></p>
-        <h1>Superdelegates</h1>
-        <p class="lead"><strong>can decide the Democratic primary for you?</strong></p>
+    <section class="row padded">
+      <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+        <p class="lead text-justify">{{ explanation.text }}</p>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+        <p><iframe style="height:315px;width:100%;" src="https://www.youtube.com/embed/{{ explanation.videoId }}" frameborder="0" allowfullscreen></iframe></p>
       </div>
     </section>
     
