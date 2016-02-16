@@ -5,8 +5,13 @@
 {% set clinton = 0 %}
 {% set bernie = 0 %}
 {% set total = 0 %}
+{% set delegates = {} %}
 {% for row, val in gSheets["Delegates"].rows %}
   {% if val.state == abbr or val.state == title %}
+
+    {% set lastName = val.lastname|slug %}
+    {% set delegates[lastName] = val %}
+    
     {% set total += 1 %}
     {% if val.candidate|lower == "clinton" %}
       {% set clinton += 1 %}
@@ -19,33 +24,13 @@
 {% set uncommitted = total - clinton - bernie %}
 
   <article>
-    <section class="row text-center padded-sm">
-      <p class="lead">Superdelegates in</p>
-      <h1>{{title|safe}}</h1>
-    </section>
 
-    <section class="row padded bk-red bk-tone-btm">
-      {% if total > 1 %}
-      <h1 class="text-center"><span class="font-serif">{{ total }}</span> Superdelegates</h1>
-      <h3 class="text-center">
-        {% if clinton + bernie > 0 %}
-        <span class="font-serif">{{ bernie }}</span> Sanders - <span class="font-serif">{{ clinton }}</span> Clinton - <span class="font-serif">{{ uncommitted }}</span>
-        {% endif %}
-        Uncommitted</h3>
-      <p class="lead text-center">Tell these {{ uncommitted + clinton }} to vote for Bernie!</p>
-      <p class="text-center hide">
-        <a href="#delegate" class="btn btn-warning btn-lg">contact them now</a>
-      </p>
-      {% elseif total > 0 %}
-        {% if bernie %}
-          <h1 class="text-center">This Superdelegates is for Bernie!</h1>
-        {% else %}
-          <h1 class="text-center">Tell this Superdelegates to vote for Bernie!</h1>
-        {% endif %}
-      {% else %}
-      <h2 class="text-center">We don't know of any Superdelegates from {{ title|safe }}</h2>
-      <p class="text-center lead">Yet...</p>
-      {% endif %}
+    <section class="row padded bk-red bk-tone-btm text-center">
+      <h1>{{ title }}</h1>
+      <p class="lead-plus">has {{ total }} Superdelegate{% if total != 1 %}s{% endif %}</p>
+      <p>Tell them <em>not</em> to deny democracy - contact them now!</p>
+      <hr>
+      <p class="col-sm-10 col-sm-offest-1 col-md-6 col-md-offset-3">Below are our social media contacts for the Superdelegates where you live. Please contact them <strong>respectfully and politely</strong>, and ask them to not deny the wish of Democratic voters with their Superdelegate votes.</p>
     </section>
     
     {% if total > 0 %}
