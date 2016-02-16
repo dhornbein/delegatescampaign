@@ -7,4 +7,7 @@ explanation:
   video: https://www.youtube.com/watch?v=wvVi3u-WuWE
 stateDelegates:
   text: The most important thing we can do is contact superdelegates individually and get commitments not to overturn the primary results. We’re tracking each state and territory’s superdelegates - click on where you live in the map below, or the name of where you live in the tracker.
+readytofight:
+  logo: images/ready-to-fight-logo.gif
+  text: Hi - we’re <a href="http://readytofight.org/">Ready To Fight</a>. We started two years ago as Ready For Warren, a project to support Elizabeth Warren running for the Democratic presidential nomination, and changed our name to Ready To Fight once Bernie entered the race instead. But no matter who you’re supporting this election, you should be able to support the person with the most votes being the person who gets the nomination.
 ---
