@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "sharing_buttons.css",
-	"sources": [
-		"sharing_buttons.scss"
-	],
-	"mappings": "AAAA,EAAE,AAAA,cAAc,CAAA;EACd,UAAU,EAAE,IAAK;EACjB,OAAO,EAAE,CAAE,GACZ;;AAED,EAAE,AAAA,cAAc,CAAC,EAAE,CAAA;EACjB,OAAO,EAAE,MAAO,GACjB",
-	"names": []
-}
