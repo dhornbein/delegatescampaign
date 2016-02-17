@@ -61,10 +61,14 @@ body {
 .bk-blue {
   background-color:$blue;
   color: #FFF;
+}
+
+.bk-red,
+.bk-blue {
   a {
     color: $yellow;
     &:hover {
-      color: lighten($yellow,30%);
+      color: darken($yellow,10%);
     }
   }
 }
