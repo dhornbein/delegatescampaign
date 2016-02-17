@@ -6,6 +6,12 @@
     {% endfor %}
   </ul>
 
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      {% include "../../molecules/sharing/sharing.html" %}
+    </div>
+  </div>
+
   <div class="footer-tier">
 
     <h1 class="text-center">{{ config.title }}</h1>
@@ -14,7 +20,7 @@
 
 
   <div class="small-print text-center">
-    <small><span class="copyright">&copy;</span> <a href="http://readytofight.org/">Ready To Fight</a> // <a href="mailto:{{ config.email }}"><i class="fa fa-envelope"></i> Contact us</a> // Design by <a href="http://radicle.vision/">Radicle Vision</a> // <a href="https://github.com/dhornbein/delegatescampaign">Source Code</a></small>
+    <small><span class="copyright">&copy;</span><a href="{{ config.partner.prokick.url }}">{{ config.partner.prokick.name }}</a> &amp; <a href="{{ config.partner.readytofight.url }}">{{ config.partner.readytofight.name }}</a> // <a href="mailto:{{ config.email }}"><i class="fa fa-envelope"></i> Contact us</a> // Design by <a href="http://radicle.vision/">Radicle Vision</a> // <a href="https://github.com/dhornbein/delegatescampaign">Source Code</a></small>
     </ul>
   </div>
 </footer>
