@@ -7034,10 +7034,13 @@ body > main {
 .bk-blue {
   background-color: #3C8CC9;
   color: #FFF; }
-  .bk-blue a {
-    color: #EECA5D; }
-    .bk-blue a:hover {
-      color: #fdf7e7; }
+
+.bk-red a,
+.bk-blue a {
+  color: #EECA5D; }
+  .bk-red a:hover,
+  .bk-blue a:hover {
+    color: #e9bb2f; }
 
 .bk-white {
   background-color: #FFF;
