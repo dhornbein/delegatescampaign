@@ -10,6 +10,15 @@ shareImage: "images/social.jpg"
 petition:
   url: https://actionnetwork.org/petitions/superdelegates-dont-deny-democracy-3
   name: superdelegates-dont-deny-democracy-3
+partners:
+  readytofight:
+    url: http://readytofight.org/
+    name: Ready to Fight
+    logo: images/ready-to-fight-logo.gif
+  prokick:
+    url: http://progressivekick.org/
+    name: Progressive Kick
+    logo: imgaes/prokick-logo.jpg
 headerComponent: "../src/components/organisms/header/header.html"
 footerComponent: "../src/components/organisms/footer/footer.html"
 placeholderImage: https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/SMPTE_Color_Bars_16x9.svg/2000px-SMPTE_Color_Bars_16x9.svg.png
