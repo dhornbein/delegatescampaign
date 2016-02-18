@@ -1,0 +1,85 @@
+{% set order = delegates|sort %}
+<table class="delegate-table table table-striped table-hover">
+  <tr>
+    <th>Endorsing</th>
+    <th>Name</th>
+    <th class="hidden-xs hidden-sm">Class</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Social Media</th>
+    <th>Notes</th>
+  </tr>
+{% for delegate in order %}
+  {% set val = delegates[delegate] %}
+  
+  {% set trClass %}
+
+  <tr class="delegate-table delegate-{{ loop.index }} endorse-{{val.candidate|lower|default('uncommitted')}}">
+    <td class="endorsing">{{ val.candidate|safe|default('Uncommitted')|title }}</td>
+    <td>{{ val.name|safe }}</td>
+    <td class="hidden-xs hidden-sm">{{ val.class|safe }}</td>
+    <td>
+      {% if val.phone %}
+      <a href="tel:{{val.phone|safe|replace('\D','','g')}}" class="btn btn-default btn-sm"><i class="fa fa-phone"></i> {{val.phone|safe}}</a>
+      {% endif %}
+    </td>
+    <td>
+      {% if val.fax %}
+      <span class="btn"><i class="fa fa-fax"></i> {{val.fax|safe}}</span>
+      {% endif %}
+    </td>
+    <td>
+      {% if val.email %}
+        <a href="mailto:{{val.email|safe|replace('\s','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-envelope"></i> Email</a>
+      {% elseif val.emailform %} 
+        <a href="https://{{val.emailform|safe|replace('^https?://','')|replace('\s','')}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-globe"></i> Email</a>
+      {% endif %}
+    </td>
+    <td>
+      {% if val.address %}
+        <a href="http://maps.google.com/?q={{val.address|url_encode}}" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-map-marker"></i> Map</a>
+      {% endif %}
+    </td>
+    <td{% if not val.notes %} colspan="2"{% endif %}>
+      {% if val.facebook or val.twitter or val.youtube or val.website %}
+        {% if val.facebook %}
+        <a href="{{val.facebook|replace('\s','')}}">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span></a>
+        {% endif %}
+        {% if val.twitter %}
+        <a href="https://twitter.com/{{val.twitter|safe|replace('(https?://)?(twitter.com/)?@?','')|replace('\s','')}}">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span></a>
+        {% endif %}
+        {% if val.youtube %}
+        <a href="{{val.youtube|replace('\s','')}}">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+          </span></a>
+        {% endif %}
+        {% if val.website %}
+        <a href="https://{{val.website|safe|replace('^https?://','')|replace('\s','')}}">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+          </span></a>
+        {% endif %}
+      {% endif %}
+    </td>
+    {% if val.notes %}
+    <td>
+        <span class="font-mono">{{val.notes|safe}}</span>
+    </td>
+    {% endif %}
+  </tr>
+
+{% endfor %}
+</table>

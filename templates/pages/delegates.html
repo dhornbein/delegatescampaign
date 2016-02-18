@@ -1,0 +1,21 @@
+{% extends '../layouts/html.html' %}
+
+{% block contents %}
+
+{% set delegates = {} %}
+{% for row, val in gSheets["Delegates"].rows %}
+
+    {% set lastName = val.lastname|slug %}
+    {% set delegates[lastName] = val %}
+
+{% endfor %}
+
+<article>
+  <section class="row padded bg-white">
+    <div class="col-xs-12">
+      {% include "../../src/components/molecules/delegate_list/delegate_table_full.html" %}
+    </div>
+  </section>
+</article>
+
+{% endblock %}
