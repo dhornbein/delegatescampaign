@@ -63,17 +63,24 @@
       <h1 class="text-center">Who’s Behind This?</h1>
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
-          <img src="{{ baseURL }}{{ readytofight.logo }}" class="img-responsive center-block" alt="Ready to Fight Logo">
+          <a href="{{ config.partners.prokick.url|safe }}"><img src="{{ baseURL }}{{ config.partners.prokick.logo }}" class="img-responsive center-block" alt="{{ config.partner.prokick.name }} Logo"></a>
           <br><br>
-          <p>{{ readytofight.text|safe }}</p>
+          <p>{{ config.partners.prokick.text|safe }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+          <a href="{{ config.partners.readytofight.url|safe }}"><img src="{{ baseURL }}{{ config.partners.readytofight.logo }}" class="img-responsive center-block" alt="{{ config.partner.readytofight.name }} Logo"></a>
+          <br><br>
+          <p>{{ config.partners.readytofight.text|safe }}</p>
           <hr>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
-          <img src="{{ baseURL }}{{ prokick.logo }}" class="img-responsive center-block" alt="{{ config.partner.prokick.name }} Logo">
+          <a href="{{ config.partners.women4bernie.url|safe }}"><img src="{{ baseURL }}{{ config.partners.women4bernie.logo }}" class="img-responsive center-block" alt="{{ config.partner.women4bernie.name }} Logo"></a>
           <br><br>
-          <p>{{ prokick.text|safe }}</p>
+          <hr>
         </div>
       </div>
     </section>
