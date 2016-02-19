@@ -2,3 +2,15 @@
   padding-top: 2em;
   background-color: $header-main-bg-color;
 }
+
+.header-small {
+  padding-top: 0;
+  background-color: $header-main-bg-color;
+  .head-title .lead {
+    display: none;
+  }
+  .navbar .nav {
+    padding-bottom: 0;
+    font-size: .8em;
+  }
+}
