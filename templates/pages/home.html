@@ -15,7 +15,7 @@
     
     <section id="letter" class="row padded bk-red bk-tone-btm">
       <div class="col-sm-12 col-md-4">
-        <p class="lead">Over <mark>175,000</mark> people have already signed our letter to the Superdelegates, demanding they do what’s right. If you haven’t signed yet, <a href="{{ config.petition.url }}">click here</a>; if you have already, then read on.</p>
+        <p class="lead">{{ config.petition.text }}</p>
         <p>{% include "../../src/components/molecules/sharing/sharing.html" %}</p>
       </div>
       <div class="col-sm-12 col-md-8">
@@ -26,7 +26,10 @@
     
     <section id="action" class="row section-states padded">
       <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <p>{{ stateDelegates.textAlt }}</p>
+        <p>The most important thing we can do is contact superdelegates individually and get commitments not to overturn the primary results.</p>
+        <p>If you are already planning an action in your US state or territory around superdelegates, or would like to, then please</p>
+        <p class="text-center"><a href="mailto:{{ config.email }}" class="btn btn-warning btn-lg"><i class="fa fa-envelope"></i> Contact us</a></p>
+        <p>If you would love to learn more about the superdelegate situation where you live, we’re tracking it for you. Click on your home state/territory below - we’ll lay out the current superdelegate situation, and how you can take action.</p>
       </div>
       <div class="col-sm-12 col-lg-8 col-lg-offset-2">
         <h2 id="delegates" class="text-center">State Superdelegates</h2>

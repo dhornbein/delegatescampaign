@@ -5,9 +5,10 @@ definition: "Superdelegates are party leaders (often donors) and politicians who
 email: superdelegatecampaign@gmail.com
 headerSubTitle : "Dear Superdelegates:"
 headerTitle : "Don't Deny Democracy"
-tagline: "DNC Superdelegates could flip the Democratic primary results if they wanted to. We think that's wrong - join us."
+tagline: "We think DNC Superdelegates flipping election results is wrong - join us if you agree."
 shareImage: "images/social.jpg"
 petition:
+  text: Over <mark>175,000</mark> people have already signed our letter to the Superdelegates, demanding they do what’s right. If you haven’t signed yet, use the form to the right; if you have already, then read on.
   url: https://actionnetwork.org/petitions/superdelegates-dont-deny-democracy-3
   name: superdelegates-dont-deny-democracy-3
 partners:
