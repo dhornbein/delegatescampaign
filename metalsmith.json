@@ -14,8 +14,11 @@
     "metalsmith-markdown": {},
     "metalsmith-include": {},
     "metalsmith-permalinks": {
-      "pattern": "states/:title",
-      "relative": false
+      "relative": false,
+      "linksets": [{
+        "match": { "collection": "states" },
+        "pattern": "states/:title"
+      }]
     },
     "metalsmith-swig-helpers": {
       "filters": {
