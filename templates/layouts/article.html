@@ -6,9 +6,11 @@
 
     <h1>{{title|safe}}</h1>
 
-    {% include "../../src/components/molecules/lede/lede.html" with lede only%}
-
     {{contents|safe}}
+
+    {% if includePath %}
+    {% include  includePath %}
+    {% endif %}
 
   </article>
 
