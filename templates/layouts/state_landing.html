@@ -27,16 +27,26 @@
 
     <section class="row padded bk-red bk-tone-btm text-center">
       <h1 class="stat-title">{{ title }}</h1>
+
       <p class="lead-plus">has {{ total }} Superdelegate{% if total != 1 %}s{% endif %}</p>
       {% if total > 0 %}
-      <p>Tell them <em>not</em> to deny democracy - contact them now!</p>
-      <br><br>
-      <p class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">Below are our social media contacts for the Superdelegates where you live. Please contact them <strong>respectfully and politely</strong>, and ask them to not deny the wish of Democratic voters with their Superdelegate votes.</p>
+      <p class="lead">
+        <span class="font-serif">{{ clinton }}</span>
+        {% if clinton == 1 or total == 1 %} is {% else %} are {% endif %}
+        pledged for Clinton,
+        <span class="font-serif">{{ bernie }}</span> for Sanders{% if uncommitted > 0 %},
+        <span class="font-serif">{{ uncommitted }}</span> uncommitted{% endif %}.
+      </p>
+      <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3"><p>This is a grassroots campaign - so we need grassroots leaders like you. If you’re helping rally people where you live to make sure the Superdelegates do right, or would like to do so then please: </p>
+        <p class="text-center">
+          <a href="mailto:{{ config.email }}" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Contact us</a>
+        </p>
+      </div>
       {% else %}
       <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
         <p>We are still developing our list of delegates, if you know something we don't please send us an email</p>
         <p class="text-center">
-          <a href="mailto:{{ config.email }}" class="btn btn-warning btn-lg"><i class="fa fa-envelope"></i> Contact us</a>
+          <a href="mailto:{{ config.email }}" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Contact us</a>
         </p>
       </div>
       {% endif %}
@@ -45,10 +55,7 @@
     {% if total > 0 %}
     <section class="row">
       <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 text-center padded-sm">
-        <p class="lead">This is a grassroots campaign - so we need grassroots leaders like you. If you’re interested in helping rally people where you live to make sure the Superdelegates do right, then please:</p>
-        <p class="text-center">
-          <a href="mailto:{{ config.email }}" class="btn btn-default btn-lg"><i class="fa fa-envelope"></i> Contact us</a>
-        </p>
+        <p class="lead">If you don’t have time to help us on the ground, but still would like to reach out to your state’s Superdelegates, please use the social media links below. Contact them respectfully and politely, and ask them to not deny the wish of Democratic voters with their Superdelegate votes.</p>
       </div>
     </section>
 
@@ -57,16 +64,16 @@
 
         <!-- Nav tabs -->
         <ul class="nav nav-pills" role="tablist">
-          <li role="presentation" class="active"><a href="#cards" aria-controls="cards" role="tab" data-toggle="tab"><i class="fa fa-th-large fa-lg"></i> Cards</a></li>
-          <li role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab"><i class="fa fa-table fa-lg"></i> Table</a></li>
+          <li role="presentation"><a href="#cards" aria-controls="cards" role="tab" data-toggle="tab"><i class="fa fa-th-large fa-lg"></i> Cards</a></li>
+          <li role="presentation" class="active"><a href="#table" aria-controls="table" role="tab" data-toggle="tab"><i class="fa fa-table fa-lg"></i> Table</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="cards">
+          <div role="tabpanel" class="tab-pane" id="cards">
             {% include "../../src/components/molecules/delegate_list/delegate_list.html" %}
           </div>
-          <div role="tabpanel" class="tab-pane bk-white table-responsive text-left" id="table">
+          <div role="tabpanel" class="tab-pane active bk-white table-responsive text-left" id="table">
             {% include "../../src/components/molecules/delegate_list/delegate_table.html" %}
           </div>
         </div>
