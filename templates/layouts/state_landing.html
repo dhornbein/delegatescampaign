@@ -16,7 +16,7 @@
     {% if val.candidate|lower == "clinton" %}
       {% set clinton += 1 %}
     {% endif %}
-    {% if val.candidate|lower == "bernie" %}
+    {% if val.candidate|lower == "bernie" or val.candidate|lower == "sanders" %}
       {% set bernie += 1 %}
     {% endif %}
   {% endif %}

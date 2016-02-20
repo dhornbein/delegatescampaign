@@ -6,7 +6,7 @@
 
     <section id="problem" class="row padded">
       <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
-        <p class="lead text-justify">{{ explanation.text|safe }}</p>
+        <p class="lead">{{ explanation.text|safe }}</p>
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
         <p><iframe style="height:315px;width:100%;" src="https://www.youtube.com/embed/{{ explanation.videoId }}" frameborder="0" allowfullscreen></iframe></p>
@@ -15,7 +15,7 @@
     
     <section id="letter" class="row padded bk-red bk-tone-btm">
       <div class="col-sm-12 col-md-4">
-        <p class="lead">{{ config.petition.text }}</p>
+        <p class="lead">{{ config.petition.text|safe }}</p>
         <p>{% include "../../src/components/molecules/sharing/sharing.html" %}</p>
       </div>
       <div class="col-sm-12 col-md-8">
