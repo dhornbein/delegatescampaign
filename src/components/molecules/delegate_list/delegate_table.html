@@ -1,8 +1,8 @@
 {% set order = delegates|sort %}
 <table class="delegate-table table table-striped table-hover">
   <tr>
-    <th>Endorsing</th>
     <th>Name</th>
+    <th>Endorsing</th>
     <th class="hidden-xs hidden-sm">Class</th>
     <th>Social Media</th>
     <th>Notes</th>
@@ -13,8 +13,8 @@
   {% set trClass %}
 
   <tr class="delegate-table delegate-{{ loop.index }} endorse-{{val.candidate|lower|default('uncommitted')}}">
-    <td class="endorsing">{{ val.candidate|safe|default('Uncommitted')|title }}</td>
     <td>{{ val.name|safe }}</td>
+    <td class="endorsing">{{ val.candidate|safe|default('Uncommitted')|title }}</td>
     <td class="hidden-xs hidden-sm">{{ val.class|safe }}</td>
     <td{% if not val.notes %} colspan="2"{% endif %}>
       {% if val.facebook or val.twitter or val.youtube or val.website %}
