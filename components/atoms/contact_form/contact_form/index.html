@@ -1,0 +1,27 @@
+<form id="contactForm" action="">
+  Subject: <input type="text" id="subject"><br>
+  Message: <br>
+  <textarea id="message" cols="40" rows="5"></textarea>
+  <a id="email" class="btn btn-default btn-lg" target"_blank">Send</a>
+</form>
+
+<script>
+$( document ).ready(function() {
+
+  $('#email').mousedown(function() {
+      var email = "{{ config.email }}";
+      var linker = "mailto:" + email + "?subject=" + getSubject() + "&body=" + getBody();
+      $(this).attr('href',linker);
+  });
+
+  function getBody() {
+      var body = document.getElementById('message');
+      return encodeURI(body.value);
+  }
+
+  function getSubject() {
+      var subject = document.getElementById('subject');
+      return encodeURI(subject.value);
+  }
+});
+</script>

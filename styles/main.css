@@ -6870,6 +6870,15 @@ html #can_embed_form #action_info .action_info_user a {
   padding: 0 2em;
   font-size: 20px; }
 
+.header-small .head-title .subtitle {
+  font-size: 14px;
+  margin-top: 0; }
+
+.header-small .head-title .title {
+  font-size: 34px;
+  line-height: 10px;
+  margin-bottom: 20px; }
+
 /*
 Button
 
@@ -6972,6 +6981,15 @@ The hero's a big deal.
 .header-main {
   padding-top: 2em;
   background-color: #3C8CC9; }
+
+.header-small {
+  padding-top: 0;
+  background-color: #3C8CC9; }
+  .header-small .head-title .lead {
+    display: none; }
+  .header-small .navbar .nav {
+    padding-bottom: 0;
+    font-size: .8em; }
 
 .footer {
   background-color: #191919;
