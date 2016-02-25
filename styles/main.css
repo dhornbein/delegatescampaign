@@ -6922,6 +6922,15 @@ Styleguide eecs_ui.button
     display: block;
     padding-left: .75em; }
 
+.state-action {
+  padding: 15px 0;
+  border-bottom: 1px dashed #D1D1D1; }
+  .state-action:first-child {
+    border-top: 1px dashed #D1D1D1; }
+  .state-action .state-action-btn {
+    margin-right: 15px;
+    display: inline-block; }
+
 .list-group, .tout ul {
   margin: 0;
   padding: 0;
