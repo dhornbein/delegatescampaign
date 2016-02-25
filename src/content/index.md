@@ -2,7 +2,7 @@
 template: pages/home.html
 pageSlug: home
 explanation:
-  text: <strong>Superdelegates are special voters that the Democratic National Committee gives special power to in determining the Democratic presidential primary.</strong></br> We are supporters of Democracy, participating in the Democratic primary, and concerned about superdelegates swinging the results that real people actually voted for.
+  text: <strong>Superdelegates are special voters that the Democratic National Committee gives special power to in determining the Democratic presidential primary.</strong></br> We are supporters of Democracy, participating in the Democratic primary, and concerned about superdelegates swinging the results away from the candidate supported by the majority of Americans actually voting in primaries and caucuses.
   videoId: wvVi3u-WuWE
   video: https://www.youtube.com/watch?v=wvVi3u-WuWE
 stateDelegates:
