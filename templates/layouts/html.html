@@ -22,14 +22,14 @@
   <meta itemprop="name" content="{{ config.title }}" />
   <meta itemprop="image" content="{{ baseURL }}{{ config.shareImage }}" />
   <meta itemprop="description" content="{{ config.description }}" />
-   
+
   <meta property="og:title" content="{{ config.title }}" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="{{ config.definition }}" />
   <meta property="og:image" content="{{ baseURL }}{{ config.shareImage }}" />
   <meta property="og:url" content="http://superdelegatedemocracy.com/" />
   <meta property="og:site_name" content="{{ config.title }}" />
-   
+
   <meta name="twitter:card" content="{{ config.description }}">
   <meta name="twitter:title" content="{{ config.title }}">
   <meta name="twitter:description" content="{{ config.definition }}">
@@ -56,7 +56,7 @@
   {% endblock %}
 
 </head>
-<body class="{% if pageSlug %}{{pageSlug}}{% else %}{{title|slug}}{% endif %}">
+<body class="{% if pageSlug %}{{pageSlug}}{% else %}{{title|slug}}{% endif %}" data-lastbuilt="{{""|bustcache}}">
 
   {% block header %}
     {% set headerComponent = "../"+config.headerComponent %}
