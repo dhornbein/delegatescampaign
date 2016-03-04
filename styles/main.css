@@ -6845,6 +6845,17 @@ html #can_embed_form #action_info .action_info_user,
 html #can_embed_form #action_info .action_info_user a {
   color: inherit; }
 
+html #can_embed_form #outdated_browser_message,
+html .can_embed_outdated_browser #outdated_browser_message {
+  color: #000;
+  font-size: 80%;
+  padding: 15px 15px 0; }
+  html #can_embed_form #outdated_browser_message h2, html #can_embed_form #outdated_browser_message h3,
+  html .can_embed_outdated_browser #outdated_browser_message h2,
+  html .can_embed_outdated_browser #outdated_browser_message h3 {
+    font-size: 22px;
+    margin: 0 0 10px; }
+
 .head-title .subtitle {
   /* Superdelegates for: */
   transform: rotate(355deg);
